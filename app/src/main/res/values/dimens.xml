@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dimensions for captured fingerprints -->
+    <dimen name="captured_fingerprint_width">100dp</dimen>
+    <dimen name="captured_fingerprint_height">100dp</dimen>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fingerprint Capture"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        android:id="@+id/imageCapturedFingerprint"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/layoutCapturedFingerprints"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/fingerprint" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Left Fingerprint Button -->
+        <Button
+            android:id="@+id/btnCaptureLeftFingerprint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Capture Left Fingerprint" />
+
+        <!-- Right Fingerprint Button -->
+        <Button
+            android:id="@+id/btnCaptureRightFingerprint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Capture Right Fingerprint" />
+
+    </LinearLayout>
+
+    <!-- Captured Fingerprints Section -->
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textNextFinger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:text="Next Finger: Thumb" />
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutCapturedFingerprints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+    </LinearLayout>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Next"
+    android:id="@+id/btnNext"
+    />
+
+</LinearLayout>

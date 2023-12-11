@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "802949295396",
+    "project_id": "nira-626b0",
+    "storage_bucket": "nira-626b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802949295396:android:a4c2131c39d8577a79d7b1",
+        "android_client_info": {
+          "package_name": "com.ugwebstudio.nira"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD63DzYcLziAcgDygm8IlhhCVbHMS6TsjM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
