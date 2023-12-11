@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.github.gcacace.signaturepad.views.SignaturePad;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.firebase.auth.FirebaseAuth;
 import com.ugwebstudio.nira.R;
 
 import java.io.ByteArrayOutputStream;
@@ -103,6 +104,10 @@ public class EducationEmploymentActivity extends AppCompatActivity {
         String education = editTextEducation.getText().toString().trim();
         String occupation = editTextOccupation.getText().toString().trim();
         String employer = editTextEmployer.getText().toString().trim();
+        FirebaseAuth  firebaseAuth = FirebaseAuth.getInstance();
+        String currentUser = firebaseAuth.getCurrentUser().getUid();
+
+
 
         // Validate the inputs
         if (validateInputs(education, occupation, employer)) {
@@ -124,6 +129,7 @@ public class EducationEmploymentActivity extends AppCompatActivity {
             userData.put("education", education);
             userData.put("occupation", occupation);
             userData.put("employer", employer);
+            userData.put("userId",currentUser);
 
             userData.put("signatureImage", base64EncodedString);
 
